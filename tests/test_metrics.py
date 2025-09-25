@@ -1,9 +1,10 @@
 import pandas as pd
+
 from src.starter_finance.metrics import (
     calculate_cagr,
-    calculate_volatility,
-    calculate_sharpe,
     calculate_max_drawdown,
+    calculate_sharpe,
+    calculate_volatility,
 )
 
 

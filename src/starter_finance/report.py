@@ -1,10 +1,11 @@
 import click
 import pandas as pd
+
 from .metrics import (
     calculate_cagr,
-    calculate_volatility,
-    calculate_sharpe,
     calculate_max_drawdown,
+    calculate_sharpe,
+    calculate_volatility,
 )
 
 
