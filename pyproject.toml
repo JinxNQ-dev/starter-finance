@@ -29,4 +29,4 @@ target-version = "py39"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-v --cov=src/starter_finance --cov-report=term-missing"
+addopts = "-v"
