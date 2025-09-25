@@ -1,0 +1,32 @@
+[project]
+name = "starter-finance"
+version = "0.1.0"
+description = "CLI for financial portfolio analytics"
+authors = [{name = "JinxNQ-dev"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "click>=8.0.0",
+]
+
+[project.scripts]
+report = "starter_finance.report:cli"
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.ruff]
+select = ["E", "F", "I", "B", "C4", "UP"]
+ignore = ["E501", "C901"]
+target-version = "py39"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=src/starter_finance --cov-report=term-missing"
